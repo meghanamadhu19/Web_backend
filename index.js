@@ -49,6 +49,7 @@ const server = http.createServer((req, res) => {
 
         //https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database
         const { MongoClient } = require('mongodb');
+        res.setHeader("Access-Control-Allow-Origin","*");
 
 
         async function main() {
