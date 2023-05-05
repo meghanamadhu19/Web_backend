@@ -87,7 +87,7 @@ const server = http.createServer((req, res) => {
             //console.log(results);
             const data = (JSON.stringify(results));
             console.log(data);
-            res.end(JSON.stringify(data));
+            res.end(data);
 
         };
         //run().catch(console.dir);
