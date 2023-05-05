@@ -1,0 +1,54 @@
+{
+  "store":  [
+    {
+      "productname": "eggs",
+      "price" : 3.99,
+      "shelflocation ": 2,
+      "Exp_date" : "10-12-2023",
+      "Quantity_Available" : 5
+
+    },
+    {
+      "productname": "milk",
+      "price" : 2.49,
+      "shelflocation ": 1,
+      "Exp_date" : "05-07-2023",
+      "Quantity_Available" : 5
+      
+    },
+    {
+      "productname": "coke",
+      "price" : 4.99,
+      "shelflocation ": 5,
+      "Exp_date" : "12-07-2024",
+      "Quantity_Available" : 7
+    
+  },
+    {
+      "productname": "coffee",
+      "price" : 7.99,
+      "shelflocation ": 5,
+      "Exp_date" : "12-12-2023",
+      "Quantity_Available" : 0
+  
+     
+    },
+    {
+      "productname": "sugar",
+      "price" : 3.49,
+      "shelflocation ": 1,
+      "Exp_date" : "10-09-2023",
+      "Quantity_Available" : 0
+ 
+  },
+    {
+      "productname": "ice cream",
+      "price" : 8.99,
+      "shelflocation ": 2,
+      "Exp_date" : "09-09-2023",
+      "Quantity_Available" : 8
+     
+      
+    }
+  ]
+} 
