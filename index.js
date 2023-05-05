@@ -81,7 +81,7 @@ const server = http.createServer((req, res) => {
 
 
         async function findsomedata(client) {
-            const cursor = client.db("store").collection("convenience").find({});
+            const cursor = client.db("conv").collection("mongodb").find({});
             const results = await cursor.toArray();
             //console.log(results);
             const data = (JSON.stringify(results));
@@ -103,6 +103,6 @@ const server = http.createServer((req, res) => {
     /*/
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5959;
 
 server.listen(PORT, () => console.log(`Great our server is running on port ${PORT} `));
