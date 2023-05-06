@@ -49,7 +49,6 @@ const server = http.createServer((req, res) => {
 
         //https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb-how-to-get-connected-to-your-database
         const { MongoClient } = require('mongodb');
-        res.setHeader("Access-Control-Allow-Origin","*");
 
 
         async function main() {
@@ -82,12 +81,12 @@ const server = http.createServer((req, res) => {
 
 
         async function findsomedata(client) {
-            const cursor = client.db("conv").collection("mongodb").find({});
+            const cursor = client.db("store").collection("convenience").find({});
             const results = await cursor.toArray();
             //console.log(results);
             const data = (JSON.stringify(results));
             console.log(data);
-            res.end(data);
+            res.end(JSON.stringify(data));
 
         };
         //run().catch(console.dir);
@@ -104,6 +103,6 @@ const server = http.createServer((req, res) => {
     /*/
 });
 
-const PORT = process.env.PORT || 5959;
+const PORT = process.env.PORT || 5050;
 
 server.listen(PORT, () => console.log(`Great our server is running on port ${PORT} `));
