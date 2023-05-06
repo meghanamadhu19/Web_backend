@@ -81,11 +81,13 @@ const server = http.createServer((req, res) => {
 
 
         async function findsomedata(client) {
-            const cursor = client.db("store").collection("convenience").find({});
+            const cursor = client.db("conv").collection("mongodb").find({});
             const results = await cursor.toArray();
             //console.log(results);
             const data = (JSON.stringify(results));
             console.log(data);
+            res.setHeader("Access-Control-Allow-Origin", "*");
+            res.writeHead(200, { "Content-Type": "application/json" });
             res.end(JSON.stringify(data));
 
         };
